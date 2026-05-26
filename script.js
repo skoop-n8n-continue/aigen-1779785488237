@@ -41,7 +41,7 @@ const vehicles = [
         cta: "EXPLORE 4X4 DEALS",
         tag: "Adventure Pick",
         shortType: "4x4",
-        image: "https://skoop-signage-storage-v2-staging.s3.amazonaws.com/KHNPF50FzdERHQnlTsAmzJirsuFpteRR3tMK1hqSk6w=_skoop_media_b913270eb144582821f9e300b0f4dcf4_167282361.png"
+        image: "https://skoop-signage-storage-v2-staging.s3.amazonaws.com/9nKkypQ2YuDbLNj_cXOJzSwUPFH_4t1ChHNQVELuaik=_skoop_media_dd5980d2a3617d801fd5240cfb79353e_190039395.png"
     },
     {
         model: "2025 Chevrolet Equinox LT",
@@ -103,6 +103,10 @@ function initRail() {
             <div class="rail-label">${v.shortType}</div>
             <div class="rail-progress" id="rail-progress-${index}"></div>
         `;
+
+        // Add click listener
+        item.addEventListener('click', () => handleRailClick(index));
+
         inventoryRail.appendChild(item);
     });
 }
@@ -144,6 +148,37 @@ function updateRail(index) {
     if (activeItem) {
         activeItem.classList.add('active');
     }
+}
+
+// Function to handle clicking on rail items
+function handleRailClick(index) {
+    if (index === currentIndex) return; // Ignore if clicking current slide
+
+    // Reset current animation and interval
+    progressStartTime = 0;
+    cancelAnimationFrame(progressAnimationId);
+    clearInterval(rotationIntervalId);
+
+    // Set new index and update content
+    currentIndex = index;
+
+    // Setup transition effects
+    vehicleContainer.classList.remove('slide-in', 'slide-out');
+    infoPanel.classList.remove('blur-panel');
+    void vehicleContainer.offsetWidth; // trigger reflow
+
+    // We use slide-in directly here for immediate feedback, bypassing slide-out delay
+    updateContent(currentIndex);
+    updateRail(currentIndex);
+    vehicleContainer.classList.add('slide-in');
+
+    // Restart animation and interval
+    progressAnimationId = requestAnimationFrame(animateProgress);
+    rotationIntervalId = setInterval(transitionSlide, ROTATION_INTERVAL);
+
+    setTimeout(() => {
+        vehicleContainer.classList.remove('slide-in');
+    }, 600);
 }
 
 function animateProgress(timestamp) {
@@ -196,9 +231,11 @@ function transitionSlide() {
     }, 500); // Wait for slide out to finish
 }
 
+let rotationIntervalId;
+
 // Initialization
 initRail();
 updateContent(0);
 updateRail(0);
 progressAnimationId = requestAnimationFrame(animateProgress);
-setInterval(transitionSlide, ROTATION_INTERVAL);
+rotationIntervalId = setInterval(transitionSlide, ROTATION_INTERVAL);

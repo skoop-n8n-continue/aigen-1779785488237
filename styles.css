@@ -617,6 +617,12 @@ body {
     min-width: 120px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.rail-item:hover {
+    opacity: 0.9;
+    background: rgba(255,255,255,0.08);
 }
 
 .rail-item.active {
