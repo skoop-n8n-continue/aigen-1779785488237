@@ -272,7 +272,7 @@ body {
 
 .vehicle-img {
     width: 100%;
-    height: auto;
+    max-height: 500px;
     object-fit: contain;
     z-index: 2;
     /* Use drop-shadow for a clean cutout look */
