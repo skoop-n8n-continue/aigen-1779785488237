@@ -19,7 +19,7 @@ const vehicles = [
         cta: "VIEW TRUCK SPECIALS",
         tag: "Best Seller",
         shortType: "Truck",
-        image: "https://loremflickr.com/800/400/truck,f150?random=2"
+        image: "https://skoop-signage-storage-v2-staging.s3.amazonaws.com/oobaQ22Sv8b-rVkBaLwi-EKV-p8Cg3p9zwlxY1ShdDw=_skoop_media_f35e8d70e66f1f611d70d6b178d2a933_782247843.webp"
     },
     {
         model: "2025 Honda CR-V EX",
@@ -30,7 +30,7 @@ const vehicles = [
         cta: "CHECK AVAILABILITY",
         tag: "Family Favorite",
         shortType: "SUV",
-        image: "https://loremflickr.com/800/400/suv,honda?random=3"
+        image: "https://skoop-signage-storage-v2-staging.s3.amazonaws.com/t6UcJWMizo8OZ1n58HJOL5qZETIcaV0neeIA_a1FW3k=_skoop_media_ef28ee857a964c51f216edf2288368be_142649399.png"
     },
     {
         model: "2024 Jeep Wrangler Sport",
@@ -41,7 +41,7 @@ const vehicles = [
         cta: "EXPLORE 4X4 DEALS",
         tag: "Adventure Pick",
         shortType: "4x4",
-        image: "https://loremflickr.com/800/400/jeep,wrangler?random=4"
+        image: "https://skoop-signage-storage-v2-staging.s3.amazonaws.com/KHNPF50FzdERHQnlTsAmzJirsuFpteRR3tMK1hqSk6w=_skoop_media_b913270eb144582821f9e300b0f4dcf4_167282361.png"
     },
     {
         model: "2025 Chevrolet Equinox LT",
@@ -52,7 +52,7 @@ const vehicles = [
         cta: "GET PRE-APPROVED",
         tag: "Smart Value",
         shortType: "SUV",
-        image: "https://loremflickr.com/800/400/suv,chevy?random=5"
+        image: "https://skoop-signage-storage-v2-staging.s3.amazonaws.com/Rb2wBz7lzG0NrLAr3NWWghDCZCYL9cHwmcRVB9IsqHQ=_skoop_media_08924dff5760e85e9c27ab45b265e29a_437785626.png"
     },
     {
         model: "2024 BMW 330i",
@@ -63,7 +63,7 @@ const vehicles = [
         cta: "SEE LUXURY OFFERS",
         tag: "Premium Pick",
         shortType: "Luxury",
-        image: "https://loremflickr.com/800/400/bmw,sedan?random=6"
+        image: "https://skoop-signage-storage-v2-staging.s3.amazonaws.com/gt4-1asBpyqtxmntg496QXUtXf4f_E1a0xWXjpMMlEQ=_skoop_media_32e34f30a555c53e116968772dceae8a_917024874.png"
     }
 ];
 
