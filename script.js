@@ -8,7 +8,7 @@ const vehicles = [
         cta: "SCHEDULE TEST DRIVE",
         tag: "Great Daily Driver",
         shortType: "Sedan",
-        image: "https://loremflickr.com/800/400/sedan,car?random=1" // Placeholder using free service
+        image: "https://skoop-signage-storage-v2-staging.s3.amazonaws.com/HY7qzz9ARTfZBUXhrm3JeNf1m17hAOfhBbn41eZ4hSI=_skoop_media_96f32da6873f5a688b5eb777f5edd560_996681653.png" // Updated to BMW image provided
     },
     {
         model: "2024 Ford F-150 XLT",
