@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom Turntable - Live Inventory Spotlight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signage-container">
+        <!-- Background Elements -->
+        <div class="background">
+            <div class="bg-gradient"></div>
+            <div class="bg-carbon-pattern"></div>
+            <div class="bg-grid"></div>
+            <div class="bg-road-lines"></div>
+            <div class="bg-light-beams"></div>
+            <div class="bg-particles"></div>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="live-badge">
+                    <span class="pulse-dot"></span>
+                    LIVE INVENTORY ROTATION
+                </div>
+                <div class="featured-text">FEATURED INVENTORY</div>
+                <h1 class="main-headline">DRIVE HOME <span class="highlight-blue">TODAY</span></h1>
+            </div>
+            <div class="header-right">
+                <div class="dealer-logo-area">
+                    <div class="dealer-name">
+                        YOUR DEALERSHIP<br>
+                        AUTO GROUP
+                        <div class="chrome-shine"></div>
+                    </div>
+                    <div class="dealer-subline">New &middot; Used &middot; Certified Pre-Owned</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Hero Vehicle Area -->
+            <div class="vehicle-stage">
+                <div class="turntable-base">
+                    <div class="turntable-ring"></div>
+                    <div class="floor-reflection"></div>
+                </div>
+
+                <div class="vehicle-container" id="vehicle-container">
+                    <div class="halo-spotlight"></div>
+                    <img src="" alt="Featured Vehicle" id="current-vehicle-img" class="vehicle-img">
+                    <div class="vehicle-shadow"></div>
+                    <div class="paint-highlight"></div>
+                </div>
+            </div>
+
+            <!-- Right-Side Information Panel -->
+            <div class="info-panel glass-panel">
+                <div class="panel-corners"></div>
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <span class="now-featuring">NOW FEATURING</span>
+                        <div class="progress-indicator">
+                            <span id="current-slide-num">01</span> / 06
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" id="slide-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-identity">
+                        <h2 id="v-model" class="v-model">2025 Toyota Camry SE</h2>
+                        <div id="v-type" class="v-type">Sport Sedan</div>
+                    </div>
+
+                    <div class="price-block">
+                        <div id="v-price" class="v-price">Starting at $29,995</div>
+                        <div class="price-shimmer"></div>
+                    </div>
+
+                    <p id="v-desc" class="v-desc">
+                        Sleek midsize sedan with sharp styling, advanced safety features, and everyday comfort.
+                    </p>
+
+                    <div id="v-features" class="feature-chips">
+                        <!-- Chips injected by JS -->
+                    </div>
+
+                    <div class="cta-area">
+                        <button class="primary-cta">
+                            <span id="v-cta">SCHEDULE TEST DRIVE</span>
+                            <div class="cta-glow"></div>
+                        </button>
+                        <div class="secondary-cta">Scan or ask a sales associate for availability</div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <div class="disclaimer">Price plus tax, title, license, and dealer fees. Vehicle availability may vary.</div>
+                        <div class="qr-code-area">
+                            <div class="qr-placeholder">
+                                <div class="scan-line"></div>
+                            </div>
+                            <div class="qr-label">SCAN FOR LIVE INVENTORY</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Mini Inventory Rail -->
+        <div class="inventory-rail" id="inventory-rail">
+            <!-- Items injected by JS -->
+        </div>
+
+        <!-- Footer Ticker -->
+        <footer class="footer-ticker">
+            <div class="ticker-content" id="ticker-content">
+                <span>NEW ARRIVALS</span><span class="separator">&middot;</span>
+                <span>TEST DRIVE TODAY</span><span class="separator">&middot;</span>
+                <span>EASY FINANCING</span><span class="separator">&middot;</span>
+                <span>TRADE-INS WELCOME</span><span class="separator">&middot;</span>
+                <span>SUV SPECIALS</span><span class="separator">&middot;</span>
+                <span>TRUCK DEALS</span><span class="separator">&middot;</span>
+                <span>CERTIFIED PRE-OWNED</span><span class="separator">&middot;</span>
+                <span>DRIVE HOME TODAY</span><span class="separator">&middot;</span>
+                <!-- Duplicated for seamless loop -->
+                <span>NEW ARRIVALS</span><span class="separator">&middot;</span>
+                <span>TEST DRIVE TODAY</span><span class="separator">&middot;</span>
+                <span>EASY FINANCING</span><span class="separator">&middot;</span>
+                <span>TRADE-INS WELCOME</span><span class="separator">&middot;</span>
+                <span>SUV SPECIALS</span><span class="separator">&middot;</span>
+                <span>TRUCK DEALS</span><span class="separator">&middot;</span>
+                <span>CERTIFIED PRE-OWNED</span><span class="separator">&middot;</span>
+                <span>DRIVE HOME TODAY</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
